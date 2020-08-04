@@ -68,7 +68,7 @@ Public Class CoursesProcesses
                 dmConf.RollbackTrans()
             End If
             If dmData IsNot Nothing AndAlso dmData.InTrans Then
-                dmConf.RollbackTrans()
+                dmData.RollbackTrans()
             End If
 
             Ret.Success = False
